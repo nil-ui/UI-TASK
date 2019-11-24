@@ -1,0 +1,105 @@
+
+.container {
+    max-width:1200px;
+    width: 100%;;
+    margin: 10px auto;
+    height: auto;
+}
+
+.flex-container {
+    display:flex;
+    justify-content: flex-start;
+
+}
+.flex-content {
+    font-size: 15px;
+    font-style: normal;
+    margin-right: 10px;
+    line-height: 1.5rem;
+}
+
+.flex-stepper {
+    display:flex;
+    justify-content: space-between;
+}
+
+.title-name {
+   margin: auto 0;
+   font-size:25px;
+}
+
+::ng-deep .mat-horizontal-content-container {
+  padding: 0px !important;
+}
+::ng-deep .mat-horizontal-stepper-header-container {
+  width:100% !important;
+  max-width:960px !important;
+  overflow: hidden !important;
+}
+
+::ng-deep .mat-stepper-horizontal, .mat-stepper-vertical {
+    background-color:transparent;
+}
+
+.mat-step-text-label {
+    text-overflow: ellipsis;
+     overflow:unset !important; 
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #27AE60;
+    color: #fff;
+    border:1px solid #fff;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-edit {
+    background-color: #27AE60;
+    color: #fff;
+    
+}
+
+::ng-deep .mat-stepper-horizontal-line {
+    border-top-width: 2px !important;
+    border-top-style: solid !important;
+    /* flex: auto; */
+    height: 0 ;
+    margin: 0px -13px !important;
+    min-width: 17px !important;
+}
+
+::ng-deep  .mat-stepper-horizontal-line {
+    border-top-color: #27ae60 !important;
+}
+
+.mat-toolbar {
+    background: #666;
+    color: #fff;
+    font-size: 16px;
+}
+
+::ng-deep .bg-white {
+    background-color: #fff !important;
+    color:#000 !important;
+}
+
+
+.inner-header {
+    justify-content: space-between;
+}
+
+.mat-stroked-button {
+    border: 2px solid #27ae60;
+    padding: 0 25px;
+    line-height: 34px;
+    border-radius: 25px;
+    
+}
+
+table {
+    width: 100%;
+  }
+
+.mat-header-cell {
+    color: rgba(0,0,0,.54);
+    background-color: #eee;
+}

@@ -1,0 +1,41 @@
+.navbar {
+    justify-content: space-between;
+}
+
+span {
+    padding-right:1rem;
+}
+
+.profile-rounded {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.mat-toolbar.mat-primary {
+    background: #ffff;
+    color: #6A6868;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3)
+}
+
+.border-right {
+    border-right: 1px solid #d8cece;
+    border-radius: 0px;
+}
+
+.brand-name {
+   color:#27AE60;
+}
+
+
+
+// :host {
+//     display: inline-block;
+//     background: #ccc;
+//     padding: 10px;
+//     cursor: pointer;
+//   }
+  
+//   :host:hover {
+//     background: #ddd;
+//   }

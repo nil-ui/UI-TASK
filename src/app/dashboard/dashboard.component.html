@@ -1,0 +1,146 @@
+<!--main conatiner start from here-->
+<div class="container" >
+    <!-- navigation mover start -->
+    <div class="flex-container">
+        <span class="flex-content text-color-brand  ">Dashboard</span>
+        <span class="flex-content-icon">
+            <mat-icon aria-hidden="false" aria-label="Example thumbs up SVG icon">play_arrow</mat-icon>
+        </span>
+        <span class="flex-content text-color-brand ">Contact</span>
+        <span class="flex-content-icon">
+            <mat-icon aria-hidden="false" aria-label="Example thumbs up SVG icon">play_arrow</mat-icon>
+        </span>
+
+        <span class="flex-content text-color-brand ">Customer</span>
+        <span class="flex-content-icon">
+            <mat-icon aria-hidden="false" aria-label="Example thumbs up SVG icon">play_arrow</mat-icon>
+        </span>
+        <span class="flex-content text-color-gray-dark ">CREADIT</span>
+    </div>
+    <!-- navigation mover start -->
+
+    <!-- stepper section start from here -->
+    <div class="flex-stepper">
+        <div class="title-name text-color-gray-dark">Creadit Contract</div>
+        <div class="steeper-section" matStepperIcon="done">
+            <mat-horizontal-stepper>
+                <mat-step label="MSA">
+
+                </mat-step>
+                <mat-step label="Opportunity" matStepperIcon="done">
+
+                </mat-step>
+                <mat-step label="Services" matStepperIcon="done">
+
+                </mat-step>
+                <mat-step label="Rate Card" matStepperIcon="done">
+
+                </mat-step>
+                <mat-step label="Billing" matStepperIcon="done">
+
+                </mat-step>
+                <mat-step label="Document Upload" matStepperIcon="done">
+
+                </mat-step>
+                <mat-step label="Success" matStepperIcon="done">
+
+                </mat-step>
+
+            </mat-horizontal-stepper>
+
+
+        </div>
+    </div>
+    <!--stepper section end from here-->
+    <!--table header start from here-->
+    <mat-toolbar>
+        <mat-toolbar-row class="inner-header">
+            <span class="title-inner-header">Customer Name : <span class="sub-inner-title">TATA MOTORS</span></span>
+            <span class="title-inner-header">Salesforce Account Id : <span class="sub-inner-title">SFAC1</span></span>
+            <span class="title-inner-header">SFX Code : <span class="sub-inner-title">NOT GENERATED YET</span></span>
+        </mat-toolbar-row>
+
+    </mat-toolbar>
+    <mat-toolbar color="primary" class="bg-white">
+        <mat-toolbar-row>
+
+            <mat-label class="mr-10">Document Type</mat-label>
+            <mat-form-field class="mr-10" >
+                    <mat-select placeholder="Select from here" formControlName="color">
+                      <mat-option value="primary">Primary</mat-option>
+                      <mat-option value="accent">Accent</mat-option>
+                      <mat-option value="warn">Warn</mat-option>
+                    </mat-select>
+             </mat-form-field>
+
+            <mat-label class="mr-10">Sub Type</mat-label>
+            <mat-form-field  class="mr-10">
+                    <mat-select placeholder="Select from here" formControlName="">
+                      <mat-option value="primary">Primary</mat-option>
+                      <mat-option value="accent">Accent</mat-option>
+                      <mat-option value="warn">Warn</mat-option>
+                    </mat-select>
+             </mat-form-field>
+
+            <mat-label class="mr-10">Expiry</mat-label>
+            <mat-form-field  class="mr-10">
+                    <mat-select placeholder="Select from here" formControlName="">
+                      <mat-option value="primary">Primary</mat-option>
+                      <mat-option value="accent">Accent</mat-option>
+                      <mat-option value="warn">Warn</mat-option>
+                    </mat-select>
+             </mat-form-field>
+             <mat-label class="mr-20">File: <span class="text-color-brand">Document Type</span></mat-label>
+             <button mat-stroked-button  class="mr-20">UPLOAD</button>
+        </mat-toolbar-row>
+
+
+    </mat-toolbar>
+
+    <!--table header start from here-->
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Position Column -->
+            <ng-container matColumnDef="Name">
+              <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.Name}} </mat-cell>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="DocumentType">
+              <mat-header-cell *matHeaderCellDef> DocumentType </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.DocumentType}} </mat-cell>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="DocumentsubType">
+              <mat-header-cell *matHeaderCellDef> DocumentSubType </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.DocumentsubType}} </mat-cell>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="Expiry">
+              <mat-header-cell *matHeaderCellDef> Expiry </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.Expiry}} </mat-cell>
+            </ng-container>
+          
+             <!-- Symbol Column -->
+             <ng-container matColumnDef="symbol">
+                    <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+             </ng-container>
+
+             <ng-container matColumnDef="actions">
+                 <mat-cell *matCellDef="let row">
+                    <mat-header-cell *matHeaderCellDef>  </mat-header-cell>
+                    <button mat-icon-button color="warn"><mat-icon>delete_outline</mat-icon></button>
+                </mat-cell>
+             </ng-container>
+              
+              
+          
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+
+
+</div>

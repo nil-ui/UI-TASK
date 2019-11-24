@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+      background-color: #F1F1F1 ; }
+
+ .container {
+        max-width:1200px;
+        width: 100%;;
+        margin: 10px auto;
+        height: auto;
+}
+
+
+// color of text
+
+.text-color-brand {
+    color:	#27AE60;
+}
+
+.text-color-gray-dark {
+   color:gray;
+}
+
+.mr-10 {
+    margin-right:10px;
+}
+
+.mr-20 {
+    margin-right:20px;
+}
+
+.my-10 {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
